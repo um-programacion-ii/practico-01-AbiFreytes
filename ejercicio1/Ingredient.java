@@ -24,6 +24,13 @@ public class Ingredient {
         this.quantity = quantity;
     }
 
+    //Metodo para disminuir la cantidad
+    public void sacar(int amount) {
+        if (quantity >= amount) {
+            quantity -= amount;
+        }
+    }
+
     //Overriding toString()
     @Override
     public String toString() {
